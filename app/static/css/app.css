@@ -1,3 +1,36 @@
 body {
     padding-top: 5rem;
 }
+
+#delim {
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+}
+
+.flashes li {
+    background-color: #8BFF8B;
+    color: #008C00;
+    list-style: none;
+    width: 20%;
+    border-radius: 8px;
+    border: solid 1px #008C00;
+    padding-left: 20px;
+    margin-left: 45px;
+    font-size: large;
+}
+
+.form-group {
+    width: 300px;
+}
+
+#descrip {
+    font-size: small;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+#guide {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

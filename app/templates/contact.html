@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h2>Contact Form</h2>
+    <div id="delim"></div>
+    <p id="guide">Fill in this form to contact the site owners.</p>
+    <form method="post" action="{{ url_for('contact') }}">
+
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{ form.name.label }} <p id="descrip">Please enter your full name</p> {{ form.name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label }} <p id="descrip">Please enter your email address</p> {{ form.email(class="form-control", placeholder="jonathandoe@example.com") }}
+        </div>
+        <div class="form-group">
+            {{ form.subject.label }} <p id="descrip">Please enter the subject for your message</p> {{ form.subject(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.message.label }} <p id="descrip">Please enter the message you would like to send</p> {{ form.message(class="form-control") }}
+        </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+{% endblock %}
